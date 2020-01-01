@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
 -- Functional Programming (CS141)                                             --
--- Lab 2: Types & list comprehensions                                         --
+-- Lab: List comprehensions                                                   --
 --------------------------------------------------------------------------------
 
 import Test.Hspec
@@ -9,7 +9,7 @@ import Test.QuickCheck
 
 import Data.List (nub)
 
-import qualified Lab2 as L
+import qualified Lab as L
 
 --------------------------------------------------------------------------------
 
