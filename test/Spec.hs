@@ -52,6 +52,13 @@ main = hspec $ do
             length (nub L.noMoreThanFive) == 21
         it "has no elements whose sections add up to more than 5" $
             and [x + y <= 5 && x + y >= 0 | (x,y) <- L.noMoreThanFive]
+    describe "noMoreThanFive'" $ do
+        it "contains 21 unique elements" $
+            length (nub L.noMoreThanFive') == 21
+        it "has no elements whose sections add up to more than 5" $
+            and [x + y <= 5 && x + y >= 0 | (x,y) <- L.noMoreThanFive']
+        it "has the same elements as noMoreThanFive in the same order" $ 
+            L.noMoreThanFive == L.noMoreThanFive'
     describe "evens" $ do
         it "contains 51 unique elements" $
             length (nub L.evens) == 51

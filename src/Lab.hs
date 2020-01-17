@@ -40,8 +40,11 @@ coords = undefined
 -- 7. Using a list comprehension, define a list of all pairs where both sections
 -- are in the range from 0 to 5, such that the sum of both sections never
 -- exceeds 5.
-noMoreThanFive :: (Num a, Enum a) => [(a,a)]
+noMoreThanFive :: (Num a, Enum a, Ord a) => [(a,a)]
 noMoreThanFive = undefined
+
+noMoreThanFive' :: (Num a, Enum a) => [(a,a)]
+noMoreThanFive' = undefined
 
 -- 8. Using a list comprehension with a predicate, define a list of all even
 -- numbers from 0 to 100.
